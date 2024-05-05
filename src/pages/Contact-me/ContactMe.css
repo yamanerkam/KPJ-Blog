@@ -1,0 +1,30 @@
+.fun-p {
+    font-size: 1.3em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+}
+
+.form input {
+    text-indent: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.form textarea {
+    border-radius: 20px;
+    text-indent: 10px;
+
+    resize: none;
+    height: 30px;
+}
+
+.btn-form {
+    bottom: -25px;
+    position: absolute;
+}

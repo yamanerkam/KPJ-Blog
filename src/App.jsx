@@ -23,7 +23,6 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact-me' element={<ContactMe />} />
-
         <Route path='*' element={<NotFound />} />
       </Routes>
 
