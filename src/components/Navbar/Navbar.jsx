@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 
+import { Link } from 'react-router-dom';
 import { LuSunMedium } from "react-icons/lu";
 import { CiDark } from "react-icons/ci";
 
@@ -15,10 +16,23 @@ export default function Navbar() {
             <div className='main-part'>
                 <h1>KPJ</h1>
                 <div className="pages">
-                    <a href="">Home</a>
-                    <a href="">Blog</a>
-                    <a href="">About</a>
-                    <a href="">Newsletter</a>
+
+                    <a>
+                        <Link to={'/'}>Home</Link>
+                    </a>
+
+                    <a>
+                        <Link to={'/blog'}>Blog</Link>
+                    </a>
+
+                    <a>
+                        <Link to={'/about'}>About</Link>
+                    </a>
+
+                    <a>
+                        <Link to={'/Newsletter'}>Newsletter</Link>
+                    </a>
+
                 </div>
             </div>
 
