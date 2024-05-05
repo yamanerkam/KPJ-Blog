@@ -30,7 +30,7 @@ export default function Navbar() {
                     </a>
 
                     <a>
-                        <Link to={'/Newsletter'}>Newsletter</Link>
+                        <Link to={'/contact-me'}>Contact Me</Link>
                     </a>
 
                 </div>

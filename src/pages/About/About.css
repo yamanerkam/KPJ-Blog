@@ -1,0 +1,22 @@
+.about-p {
+    margin-top: -40px;
+}
+
+.about-p p {
+    font-size: 1.3em;
+}
+
+.about-p h3 {
+    font-size: 1.5em;
+    color: #3b7aa2;
+
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 50px;
+}

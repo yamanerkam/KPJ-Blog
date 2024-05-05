@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div>
             <div className="about-me">
-                <h1>👋 Hey, I'm Kam</h1>
+                <h1 className='name'>👋 Hey, I'm Kam</h1>
                 <p className='p1'>I am a computer engineer student who has been lazy for a while :/
                     I am sick of feeling depressed about it. And I have decided to challange myself.
                 </p>

@@ -7,9 +7,9 @@ import { Routes, Route } from "react-router-dom";
 
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
-import Newsletter from './pages/Newsletter/Newsletter';
 import Blog from './pages/Blog/Blog';
 import NotFound from './pages/NotFound/NotFound';
+import ContactMe from './pages/Contact-me/ContactMe';
 
 function App() {
 
@@ -22,7 +22,8 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/about' element={<About />} />
-        <Route path='/newsletter' element={<Newsletter />} />
+        <Route path='/contact-me' element={<ContactMe />} />
+
         <Route path='*' element={<NotFound />} />
       </Routes>
 
