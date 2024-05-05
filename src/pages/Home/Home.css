@@ -1,0 +1,53 @@
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+
+.p1 {
+    margin-bottom: 0;
+}
+
+.about-me h1 {
+    display: flex;
+
+}
+
+.about-me p {
+    font-size: 1.5rem;
+}
+
+.question {
+    font-size: 2em;
+    color: #3b7aa2;
+    margin-bottom: 15px;
+    margin-top: 1px;
+}
+
+.span-h2 {
+    color: black;
+}
+
+.ideas-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.ideas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ideas-list li {
+    list-style: none;
+    font-size: 1.3em;
+
+}
+
+li span {
+    font-size: 30px;
+}
