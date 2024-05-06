@@ -46,6 +46,10 @@
     color: #424655;
 }
 
+.pages a.dark {
+    color: white;
+}
+
 .content {
     display: flex;
     flex-direction: row;

@@ -26,6 +26,14 @@ body.dark-theme {
   /* White text */
 }
 
+body.dark-theme .pages a {
+  color: white;
+}
+
+body.dark-theme form input::placeholder {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0 13vw;
