@@ -12,6 +12,20 @@ body {
 
 }
 
+body.light-theme {
+  background-color: #fff;
+  /* White background */
+  color: #333;
+  /* Dark text */
+}
+
+body.dark-theme {
+  background-color: #333;
+  /* Dark background */
+  color: #fff;
+  /* White text */
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0 13vw;
