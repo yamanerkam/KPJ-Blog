@@ -58,3 +58,54 @@
     border: none;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        /* Decrease font size */
+        padding-top: 10px;
+        /* Adjust padding */
+        padding-bottom: 5px;
+        /* Adjust padding */
+    }
+
+    .navbar h1 {
+        font-size: 1.5em;
+        /* Decrease font size */
+    }
+
+    .pages {
+        margin-right: 10px;
+        /* Adjust margin */
+    }
+
+    .btn {
+        margin-top: 0px;
+        /* Reset margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 1.1em;
+        /* Further decrease font size */
+        padding-top: 5px;
+        /* Further adjust padding */
+        padding-bottom: 2px;
+        /* Further adjust padding */
+    }
+
+    .navbar h1 {
+        font-size: 1.3em;
+        /* Further decrease font size */
+    }
+
+    .pages {
+        margin-right: 5px;
+        /* Further adjust margin */
+    }
+
+    .btn {
+        margin-top: 0px;
+        /* Reset margin */
+    }
+}
