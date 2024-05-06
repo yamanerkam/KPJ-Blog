@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import './ContactMe.css'
 import emailjs from '@emailjs/browser';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 
 
@@ -37,16 +38,43 @@ export default function ContactMe() {
                     if you misclicked, please do carry on with the rest of your life and see you around.
                 </p>
 
-                <p className='fun-p'>
-                    But if you really wanna contact me, you can find my soicial media accounts down there
-                    and there is a good old boring contact me form which works perfectly well.
-                </p>
+                <div className="soc-side">
+                    <p className='fun-p '>
+                        But if you really wanna contact me,
+                    </p>
+                    <p className='fun-p'>you can find me on</p>
+                    <div className="socials">
 
-                <p className='fun-p'>Who uses contact me forms these days? You might be saying, The answer is developers cus we gotto keep it fancy :)
-                </p>
+                        <a className='btn-icon' target="_blank" href="https://github.com/yamanerkam">
+                            <FaGithub />
+                        </a>
+
+                        <a className='btn-icon' target="_blank" href="https://www.instagram.com/erkamyaman35/ ">
+                            <FaInstagram />
+                        </a>
+
+                        <a className='btn-icon' target="_blank" href="https://www.linkedin.com/in/erkamyaman35/
+">
+                            <FaLinkedin />
+                        </a>
+
+                        <a className='btn-icon' target="_blank" href="https://www.linkedin.com/in/erkamyaman35/ ">
+                            <FaTwitter />
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+
             </div>
 
-            <div>
+            <div className='form'>
+                <p className="fun-p">
+                    This is our good old boring contact me form which works perfectly well.
+
+                </p>
                 <form ref={form} className='form' onSubmit={handleSubmit} action="submit">
                     <input required type="text" placeholder='Name' value={name} onChange={((e) => setName(e.target.value))} name="name" id="" />
                     <input required type="email" placeholder='Email' value={email} onChange={((e) => setEmail(e.target.value))} name='email' />
@@ -54,7 +82,12 @@ export default function ContactMe() {
                     <button type='submit' className='btn-form'>Send</button>
 
                 </form>
+
+                <p className='fun-p'>Who uses contact me forms these days? You might be saying, The answer is developers cus we gotto keep it fancy :)
+                </p>
             </div>
+
+
         </div>
     )
 }
