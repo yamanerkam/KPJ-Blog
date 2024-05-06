@@ -86,7 +86,7 @@
 
 @media (max-width: 480px) {
     .navbar {
-        font-size: 1.1em;
+        font-size: 1em;
         /* Further decrease font size */
         padding-top: 5px;
         /* Further adjust padding */
@@ -95,7 +95,7 @@
     }
 
     .navbar h1 {
-        font-size: 1.3em;
+        font-size: 1.25em;
         /* Further decrease font size */
     }
 
