@@ -21,3 +21,52 @@
 .icon {
     width: 50px;
 }
+
+
+@media (max-width: 768px) {
+    .about-p {
+        margin-top: -60px;
+        /* Adjust margin */
+        margin-bottom: 20px;
+        /* Adjust margin */
+    }
+
+    .about-p p {
+        font-size: 1.2em;
+        /* Decrease font size */
+    }
+
+    .about-p h3 {
+        font-size: 1.3em;
+        /* Decrease font size */
+    }
+
+    .icon {
+        width: 40px;
+        /* Adjust icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-p {
+        margin-top: -60px;
+        /* Further adjust margin */
+        margin-bottom: 15px;
+        /* Further adjust margin */
+    }
+
+    .about-p p {
+        font-size: 1.1em;
+        /* Further decrease font size */
+    }
+
+    .about-p h3 {
+        font-size: 1.2em;
+        /* Further decrease font size */
+    }
+
+    .icon {
+        width: 30px;
+        /* Further adjust icon size */
+    }
+}
