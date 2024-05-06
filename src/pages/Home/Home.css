@@ -55,3 +55,84 @@
 li span {
     font-size: 30px;
 }
+
+
+@media (max-width: 768px) {
+    .about-me {
+        margin-top: -60px;
+        /* Adjust margin */
+        margin-bottom: 40px;
+        /* Adjust margin */
+    }
+
+    .about-me p {
+        font-size: 1.2rem;
+        /* Decrease font size */
+    }
+
+    .question {
+        font-size: 1.3em;
+        /* Decrease font size */
+        margin-bottom: 10px;
+        /* Adjust margin */
+        margin-top: 0;
+        /* Adjust margin */
+    }
+
+    .ideas-title {
+        font-size: 1.3rem;
+        /* Decrease font size */
+        margin-bottom: 5px;
+        /* Adjust margin */
+    }
+
+    .ideas-list li {
+        font-size: 1.2em;
+        /* Decrease font size */
+    }
+
+    li span {
+        font-size: 25px;
+        /* Decrease font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me {
+        margin-top: -60px;
+        /* Further adjust margin */
+        margin-bottom: 30px;
+        /* Further adjust margin */
+    }
+
+    .about-me p {
+        font-size: 1.1rem;
+        /* Further decrease font size */
+    }
+
+    .question {
+        font-size: 1.2em;
+        /* Further decrease font size */
+        margin-bottom: 5px;
+        /* Further adjust margin */
+        margin-top: 0;
+        /* Further adjust margin */
+    }
+
+    .ideas-title {
+        font-size: 1.2rem;
+        /* Further decrease font size */
+        margin-bottom: 3px;
+        /* Further adjust margin */
+    }
+
+    .ideas-list li {
+        font-size: 1.1em;
+        /* Further decrease font size */
+    }
+
+    li span {
+        font-size: 20px;
+        /* Further decrease font size */
+    }
+}
