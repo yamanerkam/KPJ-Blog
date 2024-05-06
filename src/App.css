@@ -34,6 +34,10 @@ body.dark-theme form input::placeholder {
   color: #fff;
 }
 
+body.dark-theme form input {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0 13vw;
