@@ -1,6 +1,33 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import './ContactMe.css'
+import emailjs from '@emailjs/browser';
+
+
+
 export default function ContactMe() {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const form = useRef();
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        emailjs
+            .sendForm('service_rho5w8x', 'template_vxaxkhh', form.current, {
+                publicKey: '40I0FwzM30_m_vkho',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+
+    };
+
     return (
         <div className='contact-me-page'>
 
@@ -20,11 +47,11 @@ export default function ContactMe() {
             </div>
 
             <div>
-                <form className='form' action="submit">
-                    <input required type="text" placeholder='Name' name="name" id="" />
-                    <input required type="email" placeholder='Email' name='email' />
-                    <textarea required placeholder='Message' name="message" id="" cols="20" rows="1"></textarea>
-                    <button className='btn-form'>Send</button>
+                <form ref={form} className='form' onSubmit={handleSubmit} action="submit">
+                    <input required type="text" placeholder='Name' value={name} onChange={((e) => setName(e.target.value))} name="name" id="" />
+                    <input required type="email" placeholder='Email' value={email} onChange={((e) => setEmail(e.target.value))} name='email' />
+                    <input required type='text' placeholder='Message' value={message} onChange={((e) => setMessage(e.target.value))} name="message" ></input>
+                    <button type='submit' className='btn-form'>Send</button>
 
                 </form>
             </div>

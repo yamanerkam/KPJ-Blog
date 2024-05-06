@@ -11,20 +11,35 @@
 
 .form input {
     text-indent: 10px;
-    height: 30px;
+    min-height: 30px;
+    height: auto;
     width: 300px;
+    border: 2px #3b7aa2 solid;
     border-radius: 20px;
 }
 
-.form textarea {
-    border-radius: 20px;
-    text-indent: 10px;
-
-    resize: none;
-    height: 30px;
+.form input::placeholder {
+    color: #424655;
 }
+
+.form input:focus {
+    outline: none;
+}
+
+
 
 .btn-form {
-    bottom: -25px;
-    position: absolute;
+    display: flex;
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #3b7aa2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-form:hover {
+    background-color: #235682;
 }
