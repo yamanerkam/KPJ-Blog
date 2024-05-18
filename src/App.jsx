@@ -10,6 +10,7 @@ import Home from './pages/Home/Home';
 import Blog from './pages/Blog/Blog';
 import NotFound from './pages/NotFound/NotFound';
 import ContactMe from './pages/Contact-me/ContactMe';
+import BlogID from './pages/BlogByID/BlogID.jsx';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/:id' element={<BlogID />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact-me' element={<ContactMe />} />
         <Route path='*' element={<NotFound />} />

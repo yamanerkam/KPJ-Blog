@@ -1,0 +1,37 @@
+.blog-card {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.4s ease-in-out;
+}
+
+.blog-card:hover {
+    background-color: #E2E8F0;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+
+.blog-card img {
+    margin-right: 15px;
+    width: 5%;
+}
+
+.inside-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: -6px !important;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.parags {
+    font-size: 0.8em;
+    color: gray !important;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}

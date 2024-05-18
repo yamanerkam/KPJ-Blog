@@ -14,16 +14,12 @@ body {
 
 body.light-theme {
   background-color: #fff;
-  /* White background */
   color: #333;
-  /* Dark text */
 }
 
 body.dark-theme {
   background-color: #333;
-  /* Dark background */
   color: #fff;
-  /* White text */
 }
 
 body.dark-theme .pages a {
